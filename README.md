@@ -16,3 +16,9 @@ npm start
 
 Starta server med:
 npm run dev
+
+
+Ubuntu i Windows
+Kör i powershell för att mappa portarna till virtuella datorn
+netsh interface portproxy add v4tov4 listenport=3000 listenaddress=0.0.0.0 connectport=3000 connectaddress=172.22.139.109
+netsh interface portproxy add v4tov4 listenport=5000 listenaddress=0.0.0.0 connectport=5000 connectaddress=172.22.139.109
