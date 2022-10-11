@@ -27,7 +27,7 @@ class LoginForm extends React.Component {
 
 //    const resp = await fetch("/api/login?username="+login_data.username);
     const resp = await fetch("/api/login", opts);
-    console.log(resp)
+    console.log("🚀 ~ file: App.js ~ line 30 ~ LoginForm ~ resp", resp)
     const resp_json = await resp.json();
     return resp_json;
   }
