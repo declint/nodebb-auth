@@ -8,7 +8,7 @@ app.use(bodyParser.urlencoded({     // to support URL-encoded bodies
   extended: true
 })); 
 
-let login_data = {
+let temp_login_data = {
     username: "declint",
     password: "nada123"
 };
@@ -64,7 +64,7 @@ async function getCookieAndTheData(login_data)
     console.log("API Req:");
     console.log(apireq);*/
 }
-getCookieAndTheData(login_data);
+getCookieAndTheData(temp_login_data);
 
 app.post("/api/login", async (req, res) => { 
     const superkaka = await loginAndFetchCookie(req.body);
